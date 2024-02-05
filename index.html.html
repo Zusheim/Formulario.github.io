@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Formulario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 2em auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 0.8em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario</h1>
+    </header>
+
+    <form action="mailto:karim.egure@gmail.com" method="post" enctype="text/plain">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label>Cuestionario:</label>
+
+        <label for="pregunta1">1. ¿Cuál es tu película favorita?</label>
+        <textarea id="pregunta1" name="pregunta1" rows="2" required></textarea>
+
+        <label for="pregunta2">2. ¿Cuál es tu libro preferido?</label>
+        <textarea id="pregunta2" name="pregunta2" rows="2" required></textarea>
+
+        <label for="pregunta3">3. ¿Cuál es tu hobby principal?</label>
+        <textarea id="pregunta3" name="pregunta3" rows="2" required></textarea>
+
+        <label for="pregunta4">4. ¿Tienes alguna meta a corto plazo?</label>
+        <textarea id="pregunta4" name="pregunta4" rows="2" required></textarea>
+
+        <label for="pregunta5">5. ¿Cuál es tu lugar favorito para vacacionar?</label>
+        <textarea id="pregunta5" name="pregunta5" rows="2" required></textarea>
+
+        <label for="pregunta6">6. ¿Qué tipo de música te gusta?</label>
+        <textarea id="pregunta6" name="pregunta6" rows="2" required></textarea>
+
+        <label for="pregunta7">7. ¿Tienes alguna habilidad especial?</label>
+        <textarea id="pregunta7" name="pregunta7" rows="2" required></textarea>
+
+        <label for="pregunta8">8. ¿Cuál es tu platillo favorito?</label>
+        <textarea id="pregunta8" name="pregunta8" rows="2" required></textarea>
+
+        <label for="pregunta9">9. ¿Cuál es tu deporte preferido?</label>
+        <textarea id="pregunta9" name="pregunta9" rows="2" required></textarea>
+
+        <label for="pregunta10">10. ¿Tienes algún sueño que te gustaría realizar?</label>
+        <textarea id="pregunta10" name="pregunta10" rows="2" required></textarea>
+
+        <button type="submit">Enviar Respuestas</button>
+    </form>
+
+</body>
+</html>
